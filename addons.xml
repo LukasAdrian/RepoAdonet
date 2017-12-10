@@ -343,6 +343,97 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.torrenter" name="Torrenter" version="2.6.5" provider-name="inpos">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.libtorrent"/>
+        <import addon="script.module.torrent.ts"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.torrent2http"/>
+        <import addon="script.module.pyrrent2http"/>
+        <import addon="script.module.chardet" />
+        <import addon="script.module.pyxbmct"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Plugin helps you to watch videos from p2p torrent-networks, without full predownload.
+        </summary>
+        <description lang='en'>It also can add, control torrents and play downloaded files with external torrent-client (uTorrent, Transmisson, Vuse, Deluge, qBittorrent) or python-libtorrent.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Плагин позволяет просматривать видео из пиринговых торрент-сетей, не дожидаясь полного скачивания.
+        </summary>
+        <description lang='ru'>Так же плагин может добавлять, проигрывать и управлять скачками в торрент клиентах (uTorrent, Transmisson, Deluge и Vuse, qBittorrent) или средставми python-libtorrent.
+        </description>
+	<disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+	<summary lang='es'>Complemento que nos permite ver vídeos que se distribuyen en redes BitTorrent sin necesidad de descargarlos previamente por completo.
+        </summary>
+        <description lang='es'>También gestiona torrents y nos deja elegir entre su propio cliente interno y otros externos (μTorrent, Transmission, Deluge, Vuze, qBittorrent), el cliente BitTorrent con el que realizar las descargas.
+        </description>
+	<forum>https://forums.tvaddons.ag/addon-releases/29224-torrenter-v2.html</forum>
+	<website>http://xbmc.ru/forum/showthread.php?t=6837</website>
+	<source>https://github.com/inpos/plugin.video.torrenter</source>
+    </extension>
+</addon>
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.0.6"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV from your media center</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="plugin.video.wet4u"
+       name="Wet4U"
+       version="1.0.2"
+       provider-name="Pólux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Addon xxx. Contenido sólo para mayores 18 años</summary>
+    <description>Addon xxx. Vídeos y películas eróticas</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="program.plexus"
        name="Plexus"
        version="0.1.7"
@@ -577,6 +668,45 @@
     </extension>
 </addon>
 
+<addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" version="2.0.0" provider-name="tvaddons">
+    <extension point="xbmc.addon.repository" name="TVADDONS.CO Resolvers Repository">
+        <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Unofficial Resolvers for the Kodi Media Center</summary>
+        <description>Unofficial Resolvers for the Kodi Media Center. Please visit www.tvaddons.co for support!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
+	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+
+    <dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
+		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+		<platform>all</platform>
+                <forum>https://www.tvaddons.co/forums</forum>
+                <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
 <addon id="script.alfa-script" name="Fix version 1.7.0" version="1.7.0" provider-name="Alfa Addon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -596,5 +726,44 @@
     <email>my@email.com</email>
     <source>source</source>
   </extension>
+</addon>
+
+<addon id="script.limpiarkodi"
+       name="Limpia Tu Kodi"
+       version="1.0.0"
+       provider-name="Clipol">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+ 	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Limpiar</summary>
+    <description>Limpia los Caches de Kodi.</description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
 </addon>
 </addons>
