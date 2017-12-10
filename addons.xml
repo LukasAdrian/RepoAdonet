@@ -214,6 +214,29 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.Explora"
+       name="Explora"
+       version="1.3.0"
+       provider-name="Netai">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.f4mTester"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Documentales</summary>
+    <language>es</language>
+    <description lang="es">Todos los documentales en castellano, la videoteca que no deja de crecer ! ... Este addon requiere de plugin f4mTester de shani para funcionar.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -343,6 +366,38 @@
   </extension>
 </addon>
 
+<addon
+  id="plugin.video.SportsDevil"
+  version="2017.10.30"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <!-- <import addon="script.video.F4mProxy" /> -->
+   <!-- <import addon="plugin.video.f4mTester" /> -->
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil addon</summary>
+    <description lang="en">Play videos of different ad-financed sports streaming sites.</description>
+    <description lang="he">נגן סרטונים של אתרי ספורט שונים הממומנים על ידי מודעות.</description>
+    <disclaimer lang="en">SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site. For updates - check the readme.</disclaimer>
+    <disclaimer lang="he">SportsDevil אינו מספק שום הזרמה; איכות הזרם, התוכן וזכויות היוצרים הם באחריות אתר האינטרנט הממומן על ידי המודעה. לעדכונים בדוק את קובץ readme</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.torrenter" name="Torrenter" version="2.6.5" provider-name="inpos">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -431,6 +486,78 @@
     <summary>Addon xxx. Contenido sólo para mayores 18 años</summary>
     <description>Addon xxx. Vídeos y películas eróticas</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.xxx-o-dus"
+	     name="XXX-O-DUS"
+	     version="3.00.034"
+	     provider-name="Echo Coder">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.echo"/>
+    <import addon="script.xxxodus.artwork"/>
+    <import addon="script.xxxodus.scrapers"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.urlresolver.xxx"/>
+    <import addon="script.module.pyxbmct"/>
+	<import addon="script.module.requests" />
+    <!--<import addon="repository.colossus"/>-->
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">[B]Massive Credit to @_PYDEV_ KingKong for the pyxbmct work to provide a stunning interface to view the dialogs in this addon and the GitHub issues! Also A huge credit to jokstergfx for the icons and fanarts in this addon and many others! Thank you![/B]</summary>
+    <description lang="en">[COLOR white]XXX-O-DUS scrapes many websites to bring you hundreds of thousands of videos. Features of the addon include, history monitoring, favourites, downloadable videos, parental controls and more![/COLOR]
+
+[COLOR white]Websites Include: Porn.com, PornHD.com, Chaturbate.com, RedTube.com, Xhamster.com, YouPorn.com, PornFun.com, Motherless.com,Porn00.org, Spankbang.com, Virtualpornstars.com, Watchxxxfree.com, Perfectgirls.net, XNXX.com and many more.[/COLOR]</description>
+    <disclaimer lang="en">The pages of this addon are designed for ADULTS only and may include pictures and materials that some viewers may find offensive. If you are under the age of 18, if such material offends you or if it is illegal to view such material in your community please exit the addon.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <website>https://github.com/Colossal1/plugin.video.xxx-o-dus</website>
+    <forum>https://github.com/Colossal1/plugin.video.xxx-o-dus</forum>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ZemTV-shani"
+       name="Zem"
+       version="6.7.0"
+       provider-name="shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+       	<import addon="script.module.elementtree" version="1.2.8"/>
+
+
+    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Zem Addon for sports and desi contents. Visit TVADDONS.ag for support</summary>
+    <description>Watch Sports and Desi contents on your XBMC. This plugin fetches the video sources from various platforms and locations</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with any of the content provider.</disclaimer>
+    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
+    <email>@shani_08_kodi</email>
+    <platform>all</platform>
+
+
   </extension>
 </addon>
 
