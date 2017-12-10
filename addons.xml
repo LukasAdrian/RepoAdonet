@@ -343,6 +343,59 @@
   </extension>
 </addon>
 
+<addon id="program.plexus"
+       name="Plexus"
+       version="0.1.7"
+       provider-name="enen92, TVAddons, RonnieHD">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>SopCast and AceStream for Kodi</summary>
+    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
+    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
+    <description lang="es">Plexus - Una estructura compleja conteniendo una intrincada red de partes. Plexus añade soporte nativo peer-to-peer (AceStream y SopCast) al Centro de Entretenimiento Kodi para varias plataformas.[CR][CR]Documentacion: (falta)</description>
+	<disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
+   	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.3" provider-name="Alfa Addon">
+    <extension point="xbmc.addon.repository" name="Alfa-Addon Repo">
+        <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Alfa-Addon</summary>
+        <description></description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.CanalNereo" name="[COLOR lime]Repo Canal Nereo[/COLOR] Repo" version="1.0.2" provider-name="Canal Nereo">
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Mi</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.kodil" name=".[COLOR blue].Kodil [/COLOR][COLOR white] Repository [/COLOR]" version="1.3" provider-name="kodil">
     <extension point="xbmc.addon.repository" name=".Kodil  Repository ">
         <info compressed="false">https://raw.githubusercontent.com/kodil/kodil/master/addons.xml</info>
@@ -357,6 +410,117 @@
     </extension>
 </addon>
 
+<addon id="repository.kodispain" name="kodispain repository" version="1.0" provider-name="joheos11">
+	<extension point="xbmc.addon.repository" name="KodiSpain repository">
+		<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>-KodiSpain Repo</summary>
+		<description>Repositorio creado para grupo telegram http://t.me/kodispain</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.magellan" name="Repo Magellan" version="1.2" provider-name="Ike">
+	<extension point="xbmc.addon.repository" name="repository.magellan">
+		<info compressed="false">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml</info>
+		<checksum>http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo Magellan</summary>
+		<description>Repo Magellan</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.MagyckPi" name="[COLOR deeppink]Magyck[/COLOR][COLOR lime]Pi[/COLOR][COLOR gold] Repo[/COLOR]" version="1.5.8" provider-name="_*JoSe*_">
+    <extension point="xbmc.addon.repository" name="MagyckPi Jose">
+        <info>https://raw.githubusercontent.com/RetroBlogPi/MagyckPi/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/RetroBlogPi/MagyckPi/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/RetroBlogPi/MagyckPi/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para los mios</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.Maniac" name="Maniac repository" version="1.0.0" provider-name="Maniac">
+	<extension point="xbmc.addon.repository" name="Maniac Repository">
+		<info compressed="false">http://raw.github.com/Maniac2017/repository.Maniac/master/addons.xml</info>
+		<checksum>http://raw.github.com/Maniac2017/repository.Maniac/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/Maniac2017/repository.Maniac/master/repor/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Maniac Addon</summary>
+		<description>Repositorio NO oficial para Kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.myshows.me" name="MyShows.me Kodi Repo" version="1.0.5" provider-name="DiMartino">
+	<extension point="xbmc.addon.repository" name="MyShows.me Kodi Repo">
+		<info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
+		<checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
+		<datadir zip="true">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Устанавливайте дополнения из репозитория MyShows.me</summary>
+		<description>Дополнения для Kodi</description>
+		<disclaimer>DiMartino</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.Palantir" name="[COLOR gold]Palantir[/COLOR] Repo" version="1.0.1" provider-name="TierraMedia">
+    <extension point="xbmc.addon.repository" name="Palantir Repo">
+        <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Palantir</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.playonmonkey" name="Playonmonkey" version="1.8" provider-name="Playonmonkey">
+	<extension point="xbmc.addon.repository" name="Playonmonkey">
+		<info compressed="false">https://raw.githubusercontent.com/playonmonkey/Gorilla/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/playonmonkey/Gorilla/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/playonmonkey/Gorilla/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Playonmonkeys Repository</summary>
+		<description>Stored add ons by Playonmonkey</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.plexus-streams" name="Plexus-Streams Repository" version="1.0.0" provider-name="D4FC">
+	<extension point="xbmc.addon.repository" name="Plexus-Streams Repository">
+		<info compressed="false">https://bitbucket.org/plexus-streams/plexus-streams/raw/releases/addons.xml</info>
+		<checksum>https://bitbucket.org/plexus-streams/plexus-streams/raw/releases/addons.xml.md5</checksum>
+		<datadir zip="true">https://bitbucket.org/plexus-streams/plexus-streams/raw/releases/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Plexus-Streams Repository</summary>
+		<description>Plexus-Streams Repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.RepoAdoNet" name="[COLOR red] Teco[/COLOR] Repo" version="1.0.1" provider-name="Teco">
     <extension point="xbmc.addon.repository" name="Repo Teco">
         <info>https://raw.githubusercontent.com/LukasAdrian/RepoAdoNet/master/addons.xml</info>
@@ -369,5 +533,68 @@
         <disclaimer></disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.repojhgmaster3" name="[COLOR lime]JHGMASTER[/COLOR] Repo" version="1.0.1" provider-name="Yo Mismo">
+    <extension point="xbmc.addon.repository" name="JHGMASTER">
+        <info>https://raw.githubusercontent.com/lokiyotnt69/RepoJhgmaster3/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/lokiyotnt69/RepoJhgmaster3/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/lokiyotnt69/RepoJhgmaster3/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Mi GENTE</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.ronniehd" name="RonnieHD repository" version="1.0.1" provider-name="RonnieHD">
+	<extension point="xbmc.addon.repository" name="RonnieHD Repository">
+		<info compressed="false">https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/ronniehd/repository.ronniehd/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Third party Kodi addons updates/mods</summary>
+		<description>RonnieHD Repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.sweetwork" name="Sweetwork Repository" version="1.0.03" provider-name="Sweetwork">
+    <extension point="xbmc.addon.repository" name="Sweetwork Repository">
+        <info compressed="false">https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/code-sandbox/repository.sweetwork/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install software from the Sweetwork Repository</summary>
+        <description>Download and install plugins, addons, scripts and dependencies for Kodi.</description>
+        <disclaimer>The Sweetwork Repo indexes and aggregates packages from multiple sources. Therefor Sweetwork accepts no responsibility for included 3rd party software.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.alfa-script" name="Fix version 1.7.0" version="1.7.0" provider-name="Alfa Addon">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="script.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Sumario en Español</summary>
+    <description lang="es">script para la versión 1.7.0 o superior</description>
+    <summary lang="en">English summary</summary>
+    <description lang="en">script for version 1.7.x</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>foro</forum>
+    <website>web</website>
+    <email>my@email.com</email>
+    <source>source</source>
+  </extension>
 </addon>
 </addons>
