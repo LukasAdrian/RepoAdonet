@@ -977,6 +977,114 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
+<addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="python_libtorrent"/>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
+    <summary lang='es'>script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.49"
+     provider-name="natko1412">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>
+  </extension>
+</addon>
+
+<addon id="script.module.livestreamer"
+       name="livestreamer"
+       version="1.12.0"
+       provider-name="Christopher Rosell">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"
+                      version="1.1.0"
+                     optional="false"/>
+    <import addon="script.module.singledispatch"
+                      version="3.4.0.3"
+                     optional="false"/>
+    <import addon="script.module.futures"
+                      version="2.2.0"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Livestreamer extracts streams from various services</summary>
+    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/chrippa/livestreamer.git</source>
+    <website>http://livestreamer.io</website>
+  </extension>
+</addon>
+
+<addon id="script.module.pyrrent2http" name="pyrrent2http" version="0.9.8" provider-name="inpos">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import	addon="script.module.libtorrent" />
+        <import addon="script.module.chardet" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.script" library="default.py">
+    	<provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>inpos@yandex.ru</email>
+        <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
+</addon>
+
+<addon id="script.module.torrent2http" name="torrent2http" version="0.2.6" provider-name="anteo,DiMartino,-=Vd=-">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.requests" optional="false"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>anteo@academ.org</email>
+    </extension>
+</addon>
+
 <addon id="script.module.urlresolver" name="URLResolver" version="4.0.15" provider-name="Eldorado, tknorris, tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
