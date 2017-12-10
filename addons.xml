@@ -291,6 +291,36 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.LFP"
+       name="LFP"
+       version="0.0.2"
+       provider-name="LFP">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por LFP</summary>
+    <description>LFP 2017</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.mobdina" name="Mobdina" version="10.17.2017" provider-name="Sweetwork">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
@@ -311,6 +341,40 @@
             <fanart>fanart.gif</fanart>
         </assets>
 	</extension>
+</addon>
+
+<addon id="plugin.video.MundoDragonBall"
+       name="MundoDragonBall"
+       version="0.0.1"
+       provider-name="Dani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Mundo Dragon Ball: Addon con todo contenido referido a Dragon Ball</summary>
+    <description>
+    Addon Creado por Dani.
+	GNU/GPU 2017 LICENSE
+    </description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.NetHbo"
@@ -586,6 +650,22 @@
   </extension>
 </addon>
 
+    <addon id="repository.adryan" name="ADRYAN Repositorio" version="2.0.2" provider-name="adryan">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Adryan Repositorio Oficial">
+            <info compressed="false">https://raw.githubusercontent.com/adrianhn/adryanrepo/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/adrianhn/adryanrepo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/adrianhn/adryanrepo/master/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repositorio para AdryanList 2.0.2</summary>
+            <description>Repositorio que pertenece a AdryanList.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.3" provider-name="Alfa Addon">
     <extension point="xbmc.addon.repository" name="Alfa-Addon Repo">
         <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
@@ -804,6 +884,25 @@
     <extension point="xbmc.addon.metadata">
         <summary>Unofficial Resolvers for the Kodi Media Center</summary>
         <description>Unofficial Resolvers for the Kodi Media Center. Please visit www.tvaddons.co for support!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.vstream"
+        name="vStream Repository"
+        version="0.0.2"
+        provider-name="Venom">
+    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
+        <checksum>https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml</info>
+        <datadir zip="true">https://github.com/Kodi-vStream/venom-xbmc-addons/raw/master/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">vStream Repository</summary>
+        <description lang="fr">Installer vStream</description>
+        <summary lang="en">vStream Repository</summary>
+        <description lang="en">Download and install vStream</description>
         <platform>all</platform>
     </extension>
 </addon>
