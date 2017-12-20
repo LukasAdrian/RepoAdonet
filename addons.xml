@@ -445,7 +445,7 @@
 
 <addon id="plugin.video.NetHbo"
        name="[COLOR yellow]NetHbo[/COLOR]"
-       version="1.0.9"
+       version="1.1.0
        provider-name="Teco">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
