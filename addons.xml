@@ -272,26 +272,20 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Explora"
-       name="Explora"
-       version="1.3.0"
-       provider-name="Netai">
+<addon id="plugin.video.EasyPalantir"
+	   name="Easy Palantir"
+	   version="1.0.3"
+	   provider-name="Insane in the Brain">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.f4mTester"/>
-	<import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Documentales</summary>
-    <language>es</language>
-    <description lang="es">Todos los documentales en castellano, la videoteca que no deja de crecer ! ... Este addon requiere de plugin f4mTester de shani para funcionar.</description>
-     <platform>all</platform>
+    <summary>Make Kodi Easy</summary>
+    <description>Credenciales para DK Y Kbagi</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -520,32 +514,27 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.wet4u"
-       name="Wet4U"
-       version="1.0.2"
-       provider-name="Pólux">
+<addon id="plugin.video.tvone11" name="tvOne11" version="10" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.livestreamer" />
     <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
+    <import addon="script.module.routing" />
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
+  <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Addon xxx. Contenido sólo para mayores 18 años</summary>
-    <description>Addon xxx. Vídeos y películas eróticas</description>
+    <summary lang="en_gb">tvOne</summary>
+    <description lang="en_gb">tvOne</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
     <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 
@@ -644,22 +633,6 @@
    	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
     <platform>all</platform>
   </extension>
-</addon>
-
-    <addon id="repository.adryan" name="ADRYAN Repositorio" version="2.0.2" provider-name="adryan">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="Adryan Repositorio Oficial">
-            <info compressed="false">https://raw.githubusercontent.com/adrianhn/adryanrepo/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/adrianhn/adryanrepo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/adrianhn/adryanrepo/master/</datadir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Repositorio para AdryanList 2.0.2</summary>
-            <description>Repositorio que pertenece a AdryanList.</description>
-            <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.3" provider-name="Alfa Addon">
@@ -845,6 +818,25 @@ CHERRY TV nie dostarcza bezpośrednio telewizji, filmów, seriali, muzyki ani ż
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.tv0ne" name=" Tv0ne repository" version="1.1" provider-name="GRecoTM">
+    <extension point="xbmc.addon.repository" name="Tv0ne repository">
+        <info compressed="false">http://grecotm.com/tv0ne/addons.xml</info>
+        <checksum>http://grecotm.com/tv0ne/addons.xml.md5</checksum>
+        <datadir zip="true">http://grecotm.com/tv0ne/zips</datadir>
+        <hashes>false</hashes>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Tv0ne repository</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" version="2.0.0" provider-name="tvaddons">
