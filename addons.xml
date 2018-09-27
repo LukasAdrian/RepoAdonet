@@ -173,25 +173,24 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.bonanza"
-       name="IPTV BONANZA"
-       version="1.0.0"
-       provider-name="BONANZA">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.5.7" />
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en">IPTV BONANZA</summary>
-        <description lang="en">Find and play daily IPTV lists in blogs and websites.</description>
-    </extension>
+
+<addon id="plugin.video.ByPass" 
+	   name="ByPass"
+	   version="1.0.4"
+	   provider-name="Teco">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Make Kodi Easy</summary>
+    <description>Backup </description> 
+    <platform>all</platform>
+  </extension>
 </addon>
+
 
 <addon id="plugin.video.cine" name="Cine" version="1.0.65" provider-name="Topo">
   <requires>
@@ -212,6 +211,30 @@
     <email></email>
     <source></source>
   </extension>
+</addon>
+
+
+<addon id="plugin.video.chomiteca"
+       name="Chomiteca"
+       version="1.5.0"
+       provider-name="fightnight/Mafarricos/Leinad4Mind">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="1.0.0"/>
+		<import addon="script.module.requests" version="2.6.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="chomiteca.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="pt_PT">Conteúdos dos sites Minhateca.com.br e Chomikuj.pl no Kodi</summary>
+        <summary lang="pt_BR">Conteúdos dos sites Minhateca.com.br e Chomikuj.pl no Kodi</summary>
+        <summary lang="en">Contents of Minhateca.com.br and Chomikuj.pl websites in Kodi</summary>
+		<description lang="pt_pt">Vê os teus conteúdos e, caso tenhas pontos, os da comunidade Minhateca e Chomikuj no Kodi.</description>
+		<description lang="pt_br">Veja os seus conteúdos e, caso tenha pontos, os da comunidade Minhateca e Chomikuj no Kodi.</description>
+		<description lang="en">Check out your content and, in case you've points, the Minhateca and Chomikuj community in Kodi.</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="plugin.video.Cometelo"
@@ -360,6 +383,100 @@
     <forum>n/a</forum>
     <website>n/a</website>
   </extension>
+</addon>
+
+
+<addon id="plugin.googledrive" name="Google Drive" version="1.2.11" provider-name="Carlos Guzman (cguZZman)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.clouddrive.common" version="1.2.8"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>image audio video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Google Drive for KODI</summary>
+		<description lang="en_GB">
+Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
+ - Unlimited number of accounts.
+ - Team Drives support
+ - Google Photos support
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use Google Drive as a source
+ - This program is not affiliated with or sponsored by Google.
+		</description>
+		<summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
+		<description lang="he_IL">
+הפעל את כל המדיה שלך מ- Google Drive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - שימוש ב-Google Drive כמקור
+  - תוכנית זו אינה קשורה או ממומנת על ידי Google.
+		</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<source>https://github.com/cguZZman/plugin.googledrive</source>
+		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
+		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
+		<news>
+v1.2.11 released Sep 20, 2018:
+- Resume points and watched status for strm files in library
+v1.2.10 released Sep 12, 2018:
+- Google Photos fix
+- Order by date fix
+v1.2.8 released Sep 11, 2018:
+- Subtitles assigned in source mode
+- Fixes
+v1.2.6 released Aug 26, 2018:
+- Team drive list fix
+v1.2.4 released Aug 24, 2018:
+- strm files saved in the cloud are exported as is.
+v1.2.3 released Aug 17, 2018:
+- Auto export and watch export folder.
+- Fixes
+v1.2.2 released Jul 15, 2018:
+- Fix requesting files with a single quote in the name in source mode.
+v1.2.1 released Jul 14, 2018:
+- Source mode fix
+v1.2.0 released Jul 12, 2018:
+- Team Drive support
+v1.1.0 released Jul 11, 2018:
+- New mode for source and download services. Both moved to respective addons.
+- Source service fixed.
+v1.0.5 released July 6, 2018:
+- Fix display more than 100 files in source mode
+v1.0.4 released July 5, 2018:
+- Fix exporting and google photos
+v1.0.3 released April 13, 2018:
+- Fix bug playing files with a single quote in the name.
+v1.0.2 released March 15, 2018:
+- Bug fixes
+- Auto export strm
+- Select stream format
+v1.0.1 released Nov 30, 2017:
+- Bug fixes
+v1.0.0 Nov 6, 2017:
+- First release
+		</news>
+		<disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server. 
+		</disclaimer>
+	</extension>
 </addon>
 
 <addon id="plugin.video.laliga" name="La Liga" version="0.0.21" provider-name="Topo (MOD)">
@@ -620,164 +737,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone" name="tvOne" version="11" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">tvOne</summary>
-    <description lang="en_gb">tvOne</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
 
-<addon id="plugin.video.tvone1" name="tvOne1" version="13" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">tvOne1</summary>
-    <description lang="en_gb">tvOne1</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tvone11" name="tvOne11" version="10" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">tvOne</summary>
-    <description lang="en_gb">tvOne</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tvone111" name="tvOne111" version="5" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">tvOne</summary>
-    <description lang="en_gb">tvOne</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tvone1111" name="tvOne1111" version="6" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.pyamf" />
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">tvOne</summary>
-    <description lang="en_gb">tvOne</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.xxx-o-dus"
-	     name="XXX-O-DUS"
-	     version="3.00.034"
-	     provider-name="Echo Coder">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.echo"/>
-    <import addon="script.xxxodus.artwork"/>
-    <import addon="script.xxxodus.scrapers"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.urlresolver.xxx"/>
-    <import addon="script.module.pyxbmct"/>
-	<import addon="script.module.requests" />
-    <!--<import addon="repository.colossus"/>-->
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">[B]Massive Credit to @_PYDEV_ KingKong for the pyxbmct work to provide a stunning interface to view the dialogs in this addon and the GitHub issues! Also A huge credit to jokstergfx for the icons and fanarts in this addon and many others! Thank you![/B]</summary>
-    <description lang="en">[COLOR white]XXX-O-DUS scrapes many websites to bring you hundreds of thousands of videos. Features of the addon include, history monitoring, favourites, downloadable videos, parental controls and more![/COLOR]
-
-[COLOR white]Websites Include: Porn.com, PornHD.com, Chaturbate.com, RedTube.com, Xhamster.com, YouPorn.com, PornFun.com, Motherless.com,Porn00.org, Spankbang.com, Virtualpornstars.com, Watchxxxfree.com, Perfectgirls.net, XNXX.com and many more.[/COLOR]</description>
-    <disclaimer lang="en">The pages of this addon are designed for ADULTS only and may include pictures and materials that some viewers may find offensive. If you are under the age of 18, if such material offends you or if it is illegal to view such material in your community please exit the addon.</disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <website>https://github.com/Colossal1/plugin.video.xxx-o-dus</website>
-    <forum>https://github.com/Colossal1/plugin.video.xxx-o-dus</forum>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
 
 <addon id="plugin.video.ZemTV-shani"
        name="Zem"
@@ -924,19 +884,7 @@ CHERRY TV nie dostarcza bezpośrednio telewizji, filmów, seriali, muzyki ani ż
 	</extension>
 </addon>
 
-<addon id="repository.MagyckPi" name="[COLOR deeppink]Magyck[/COLOR][COLOR lime]Pi[/COLOR][COLOR gold] Repo[/COLOR]" version="1.5.8" provider-name="_*JoSe*_">
-    <extension point="xbmc.addon.repository" name="MagyckPi Jose">
-        <info>https://raw.githubusercontent.com/RetroBlogPi/MagyckPi/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/RetroBlogPi/MagyckPi/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/RetroBlogPi/MagyckPi/master/Repositorio/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para los mios</summary>
-        <description></description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
+
 
 <addon id="repository.Maniac" name="Maniac repository" version="1.0.0" provider-name="Maniac">
 	<extension point="xbmc.addon.repository" name="Maniac Repository">
