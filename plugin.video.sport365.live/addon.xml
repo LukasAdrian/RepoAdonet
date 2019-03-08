@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.sport365.live" name="Sport365 (MOD by Teco)" version="2.4.2" provider-name="Bugatsinho (MOD by Teco)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Sport365 (MOD by Teco)no es ningun proyecto nuevo solo es un Mod que mejora un poco la version original al cual pertenece todo este trabajo.</summary>
+    <description lang="es">Sport365 Mod by TecoFork de la version 2.4.1</description>
+    <disclaimer lang="es">Sport365, Livesportstreams, Deportes247.</disclaimer>
+    <language>es</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>https://t.me/Catana</website>
+    <twitter></twitter>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.png</fanart>
+  </assets>
+  <news>
+  </news>
+  </extension>
+</addon>
