@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
 <addons>
 <addon id="plugin.audio.radio_de" name="Radio" version="2.3.2" provider-name="Tristan Fischer (sphere@dersphere.de)">
     <requires>
@@ -71,315 +70,6 @@
         <description lang="zh">访问rad.io、radio.de和radio.fr上超过7000个国际电台广播的音频插件[CR]现有功能[CR]- 英语、德语和法语支持[CR]- 按地点、类别、主题、国家、城市和语言浏览站点[CR]- 搜索站点[CR]- 115个类别、59个主题、94个国家、1010城市、63种语言</description>
     </extension>
 </addon>
-
-<addon id="plugin.program.advancedsettings"
-       name="Easy Advanced Settings"
-       version="0.8.9"
-       provider-name="kinkin">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               	library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>Create, view, edit and delete your advancedsettings.xml file in a user-friendly gui</summary>
-        <description>All settings follow the xbmc.org wiki[CR][CR]With this tool you can create your advanced settings directly from XBMC[CR][CR]If you don't know what a setting does, don't enable it!</description>
-        <platform>all</platform>
-        <language>en</language>
-        <license>GNU GENERAL PUBLIC LICENSE</license>
-        <forum></forum>
-        <website></website>
-        <source></source>
-        <email></email>
-    </extension>
-
-</addon>
-
-<addon id="plugin.video.18"
-       name="[COLOR pink]Solo Adultos + 18[/COLOR]"
-	   version="5.5.5"
-	   provider-name="Maniac">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-	<import addon="script.module.requests" />
-	<import addon="script.module.urlresolver" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
-	<disclaimer lang="en"></disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon
-	id="plugin.video.arenavisionezy"
-	name="ArenaVision EZY (MOD)"
-	version="5.3.9"
-	provider-name="Wazzu (MOD by Teco)">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="program.plexus" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>ArenaVision EZY</summary>
-		<description>Esto no es un proyecyo paralelo, simplemente es una modificacion para Kodi 16</description>
-		<platform>all</platform>
-		<license/>
-		<forum/>
-		<website/>
-		<email>egrueda@gmail.com</email>
-		<source/>
-	</extension>
-	<extension point="xbmc.addon.repository" name="ArenaVision EZY">
-		<info compressed="false">https://raw.githubusercontent.com/egrueda/kodi-repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/egrueda/kodi-repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/egrueda/kodi-repo/master/zip/</datadir>
-	</extension>
-</addon>
-
-<addon id="plugin.video.avezy" name="AvEZY" version="1.4.1" provider-name="Wazzu">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="program.plexus" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>AvEZY</summary>
-		<description>Interfaz para ArenaVision desarrollado por Wazzu</description>
-		<platform>all</platform>
-		<license/>
-		<forum/>
-		<website/>
-		<email>egrueda@gmail.com</email>
-		<disclaimer>El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida.</disclaimer>
-		<source/>
-	</extension>
-	<extension point="xbmc.addon.repository" name="AvEZY">
-		<info compressed="true">https://raw.githubusercontent.com/egrueda/kodi-repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/egrueda/kodi-repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/egrueda/kodi-repo/master/zip/</datadir>
-	</extension>
-</addon>
-
-
-<addon id="plugin.video.ByPass" name="ByPass" version="1.0.4" provider-name="Teco">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Make Kodi Easy</summary>
-    <description>Backup </description> 
-    <platform>all</platform>
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.cine" name="Cine" version="1.0.65" provider-name="Topo">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Cine</summary>
-    <description>Addon de Cine</description>
-    <disclaimer></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.chomiteca" name="Chomiteca" version="1.5.0" provider-name="fightnight/Mafarricos/Leinad4Mind">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.t0mm0.common" version="1.0.0"/>
-		<import addon="script.module.requests" version="2.6.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="chomiteca.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="pt_PT">Conteúdos dos sites Minhateca.com.br e Chomikuj.pl no Kodi</summary>
-        <summary lang="pt_BR">Conteúdos dos sites Minhateca.com.br e Chomikuj.pl no Kodi</summary>
-        <summary lang="en">Contents of Minhateca.com.br and Chomikuj.pl websites in Kodi</summary>
-		<description lang="pt_pt">Vê os teus conteúdos e, caso tenhas pontos, os da comunidade Minhateca e Chomikuj no Kodi.</description>
-		<description lang="pt_br">Veja os seus conteúdos e, caso tenha pontos, os da comunidade Minhateca e Chomikuj no Kodi.</description>
-		<description lang="en">Check out your content and, in case you've points, the Minhateca and Chomikuj community in Kodi.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="plugin.video.Cometelo"
-	name="[COLOR skyblue]Cómetelo[/COLOR]"
-	version="0.0.1"
-	provider-name="Catoal">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Programa canal sur</summary>
-    <description lang="es">Kodi, Addon , Repositorios</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.cristalazul"
-       name="[COLOR aqua]CRISTAL AZUL[/COLOR]"
-       version="0.0.1"
-       provider-name="PICAPAU y LOURDES">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" />
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-   <extension point="xbmc.addon.repository" name="Mi repositorio">
-        <info>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
-    </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary>creado por picapau y lourdes</summary>
-    <description>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE FACILITA EL ACESSO A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS
-	</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.dance" name="[COLOR lightblue]Dance Music[/COLOR]"	version="0.1"	provider-name="DJ">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="pulse.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Dance Sessions</summary>
-    <description lang="en">Gracias Anabel por orientarme.</description>
-    <disclaimer lang="en"></disclaimer>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.deportesalacarta"
-    name="Deportesalacarta"
-    version="1.33"
-    provider-name="deportesalacarta">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.EasyPalantir"
-	   name="Easy Palantir"
-	   version="1.0.3"
-	   provider-name="Insane in the Brain">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Make Kodi Easy</summary>
-    <description>Credenciales para DK Y Kbagi</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="plugin.video.football"
-	name="[COLOR skyblue]NCAA Football[/COLOR]"
-	version="2.7.2"
-	provider-name="JAR">
-  <requires>
-    <import addon="xbmc.python" version="2.2.5"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">NCAA y SPAIN</summary>
-    <description lang="es">Football NCAA Y ESPAÑA</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>
-
 
 <addon id="plugin.googledrive" name="Google Drive" version="1.2.11" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
@@ -469,33 +159,41 @@ Kodi and myself take no responsibility or liability.
 
 The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
 The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
-You can clone the project and host it in your own server. 
+You can clone the project and host it in your own server.
 		</disclaimer>
 	</extension>
 </addon>
 
-<addon id="plugin.video.laliga" name="La Liga" version="0.0.21" provider-name="Topo (MOD)">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.liveresolver"  />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Liga Española: La mejor liga del mundo</summary>
-		<description lang="en">Liga Española, Premier, Champions and much more</description>
-		<description lang="es">Liga Española, Premier, Champions y mucho más</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<disclaimer lang="es">El autor no almacena ni distribuye ninguno de los contenidos que se muestran en este addon. El autor no tiene ninguna afiliación con el proveedor de contenidos.</disclaimer>
-		<platform>all</platform>
-	</extension>
+<addon id="plugin.program.advancedsettings"
+       name="Easy Advanced Settings"
+       version="0.8.9"
+       provider-name="kinkin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Create, view, edit and delete your advancedsettings.xml file in a user-friendly gui</summary>
+        <description>All settings follow the xbmc.org wiki[CR][CR]With this tool you can create your advanced settings directly from XBMC[CR][CR]If you don't know what a setting does, don't enable it!</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE</license>
+        <forum></forum>
+        <website></website>
+        <source></source>
+        <email></email>
+    </extension>
+
 </addon>
 
-<addon id="plugin.video.LFP"
-       name="LFP"
-       version="0.0.2"
-       provider-name="LFP">
+<addon id="plugin.video.Agora"
+       name="[B][LOWERCASE][CAPITALIZE][COLOR white]Agora[/CAPITALIZE][/LOWERCASE][/B][/COLOR]"
+       version="0.0.4"
+       provider-name="Teco">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -516,10 +214,82 @@ You can clone the project and host it in your own server.
   </extension>
 
   <extension point="xbmc.addon.metadata">
-    <summary>Creado por LFP</summary>
-    <description>LFP 2017</description>
+    <summary>Addonagora@gmail.com</summary>
+    <description>Addon de Documentales 100% gratuito y basado en Youtube con licencia GNU GPL.</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.ByPass"
+	   name="ByPass"
+	   version="1.0.4"
+	   provider-name="Teco">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Make Kodi Easy</summary>
+    <description>Backup </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.chomiteca"
+       name="Chomiteca"
+       version="1.5.0"
+       provider-name="fightnight/Mafarricos/Leinad4Mind">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="1.0.0"/>
+		<import addon="script.module.requests" version="2.6.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="chomiteca.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="pt_PT">Conteúdos dos sites Minhateca.com.br e Chomikuj.pl no Kodi</summary>
+        <summary lang="pt_BR">Conteúdos dos sites Minhateca.com.br e Chomikuj.pl no Kodi</summary>
+        <summary lang="en">Contents of Minhateca.com.br and Chomikuj.pl websites in Kodi</summary>
+		<description lang="pt_pt">Vê os teus conteúdos e, caso tenhas pontos, os da comunidade Minhateca e Chomikuj no Kodi.</description>
+		<description lang="pt_br">Veja os seus conteúdos e, caso tenha pontos, os da comunidade Minhateca e Chomikuj no Kodi.</description>
+		<description lang="en">Check out your content and, in case you've points, the Minhateca and Chomikuj community in Kodi.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.EasyPalantir"
+	   name="Easy Palantir"
+	   version="1.0.3"
+	   provider-name="Insane in the Brain">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Make Kodi Easy</summary>
+    <description>Credenciales para DK Y Kbagi</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="plugin.video.nbaondemand" name="NBA On-demand" version="2.0.7" provider-name="lambda,enen92,jsergio">
@@ -544,130 +314,54 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.now_music" name="Now Thats What I Call Music"	version="5.5.8"	provider-name="Simio">
+<addon id="plugin.video.plexus-streams"
+       name="Plexus-Streams"
+       version="1.0.18b"
+       provider-name="D4FC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.pytz" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.mechanize" version="0.2.6"/>
+    <import addon="program.plexus" />
   </requires>
-  <extension point="xbmc.python.pluginsource" library="pulse.py">
-    <provides>audio</provides>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Now Thats What I Call Music Collection</summary>
-    <description lang="en"></description>
-    <disclaimer lang="en"></disclaimer>
+    <summary>Plexus wrapper</summary>
+    <description lang="en">P2P-Streams fork that works as a Plexus wrapper</description>
+    <disclaimer lang="en">The authors does not host nor distribute any of the content you may watch using this addon. The authors have no affiliation with any of the content providers. This addon does not track its users.</disclaimer>
     <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
   </extension>
 </addon>
 
-<addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.44" provider-name="TierraMedia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simple.downloader" version="1.9.5"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.extendedinfo" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="orthanc.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.repository" name="Palantir Repo">
-        <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>TV</summary>
-    <news>[COLOR lime][B] versión 0.0.44 [/B][/COLOR]
-        - Opción en herramientas para instalar scripts complementarios
-        - [Interno] Corregida visualizacion de favoritos
-    </news>
-    <description>Visualiza el contenido de la nube, series, películas.</description>
-    <disclaimer>[B][COLOR red]Todo el contenido disponible en este Addon esta sacado de servidores gratuitos, disponible en la red para todos los usuarios.[/B][/COLOR]</disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.gif</fanart>
-    </assets>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-
-
-<addon id="plugin.video.sport365.live" name="Sport365 (MOD by Teco)" version="2.4.2" provider-name="Bugatsinho (MOD by Teco)">
+<addon id="plugin.video.sport365.live" name="Sport365 (MOD by Teco)" version="2.5.0" provider-name="Bugatsinho">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
+        <import addon="plugin.video.f4mTester" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Sport365 (MOD by Teco)no es ningun proyecto nuevo solo es un Mod que mejora un poco la version original al cual pertenece todo este trabajo.</summary>
-    <description lang="es">Sport365 Mod by TecoFork de la version 2.4.1</description>
+    <description lang="es">Sport365 Mod by Teco Fork de la version 2.4.1</description>
     <disclaimer lang="es">Sport365, Livesportstreams, Deportes247.</disclaimer>
-    <language>es</language>
+    <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://t.me/Catana</website>
-    <twitter></twitter>
+    <website>https://bugatsinho.github.io</website>
+    <twitter>@bugatsinho</twitter>
   <assets>
     <icon>icon.png</icon>
     <fanart>fanart.png</fanart>
   </assets>
   <news>
   </news>
-  </extension>
-</addon>
-
-
-<addon
-  id="plugin.video.SportsDevil"
-  version="2018.01.19x"
-  name="SportsDevil"
-  provider-name="SportsDevil">
-  <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="repository.xvbmc" version="4.2"/>
-   <import addon="script.module.dateutil" />
-   <import addon="script.module.simplejson" />
-   <import addon="script.module.six" />
-   <import addon="script.module.requests" />
-   <import addon="script.module.streamlink.base" />
-   <import addon="script.video.F4mProxy" />
-   <import addon="plugin.video.f4mTester" />
-   <!-- <import addon="script.module.livestreamer" />  *Changed-2-StreamLink* -->
-   <!-- *broken* <import addon="repository.unofficialsportsdevil" version="1.0.0" optional="true"/> *broken* -->
-  </requires>
-  <extension
-    point="xbmc.python.pluginsource"
-    library="default.py">
-   <provides>video</provides>
-  </extension>
-  <!-- <extension point="xbmc.service" library="service/proxy_service.py" start="startup"/> *Changed-2-StreamLink* -->
-  <extension point="xbmc.service" library="service/streamlink_proxy.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Play videos of different ad-financed sports streaming sites (XvBMC-NL acts only as a mirror for SportsDevil).</summary>
-    <description>Play videos of different ad-financed sports streaming sites (XvBMC-NL acts only as a mirror for SportsDevil).</description>
-    <disclaimer>SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site. For updates - check the readme (XvBMC-NL acts only as a mirror for SportsDevil).</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <platform>all</platform>
-    <forum>http://forums.koditips.com/index.php?topic=11.0</forum>
-    <website>http://forums.koditips.com/index.php?topic=11.0</website>
-    <source>http://forums.koditips.com/index.php?topic=11.0</source>
-    <news>version="2018.01.19x" (mirror@xvbmc)</news>
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-  </assets>
   </extension>
 </addon>
 
@@ -707,34 +401,32 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.tvalacarta"
-    name="tvalacarta"
-    version="4.1.0"
-    provider-name="tvalacarta">
+<addon id="plugin.video.YouKids"
+       name="[B][LOWERCASE][CAPITALIZE][COLOR white]YOU[COLOR red]KIDS[/CAPITALIZE][/LOWERCASE][/B][/COLOR]"
+       version="0.0.3"
+       provider-name="Teco">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="1.9.5"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Televisión a la carta</summary>
-    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
-    <summary lang="en">TV on demand (Spanish)</summary>
-    <description lang="en">Watch on demand spanish TV on your media center</description>
+	<description>Addon Infantil con contenido Variado</description>
+    <disclaimer>Todo el contenido del Addon esta basado en Youtube</disclaimer>
     <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum>http://www.mimediacenter.info/foro</forum>
-    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
-    <email>tvalacarta@gmail.com</email>
-    <source>https://github.com/tvalacarta/tvalacarta</source>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login|startup">
   </extension>
 </addon>
-
-
-
 
 <addon id="plugin.video.ZemTV-shani"
        name="Zem"
@@ -880,8 +572,6 @@ CHERRY TV nie dostarcza bezpośrednio telewizji, filmów, seriali, muzyki ani ż
 		<platform>all</platform>
 	</extension>
 </addon>
-
-
 
 <addon id="repository.Maniac" name="Maniac repository" version="1.0.0" provider-name="Maniac">
 	<extension point="xbmc.addon.repository" name="Maniac Repository">
@@ -1067,8 +757,8 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.limpiarkodi"
        name="Limpia Tu Kodi"
-       version="1.0.0"
-       provider-name="Clipol">
+       version="1.1.1"
+       provider-name="Catoal - Teco">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -1079,7 +769,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary>Limpiar</summary>
-    <description>Limpia los Caches de Kodi.</description>
+    <description>La herramienta para limpiar de una pasada su dispositivo.</description>
     <language></language>
     <license></license>
     <source></source>
