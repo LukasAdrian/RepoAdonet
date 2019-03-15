@@ -330,27 +330,6 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.cine" name="Cine" version="1.0.72" provider-name="Topo">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Cine</summary>
-    <description>Addon de Cine</description>
-    <disclaimer></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
 <addon id="repository.kodil" name=".[COLOR blue].Kodil [/COLOR][COLOR white] Repository [/COLOR]" version="1.3" provider-name="kodil">
     <extension point="xbmc.addon.repository" name=".Kodil  Repository ">
         <info compressed="false">https://raw.githubusercontent.com/kodil/kodil/master/addons.xml</info>
@@ -374,20 +353,6 @@ You can clone the project and host it in your own server.
 	<extension point="xbmc.addon.metadata">
 		<summary>-KodiSpain Repo</summary>
 		<description>Repositorio creado para grupo telegram http://t.me/kodispain</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.magellan" name="Repo Magellan" version="1.2" provider-name="Ike">
-	<extension point="xbmc.addon.repository" name="repository.magellan">
-		<info compressed="false">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml</info>
-		<checksum>http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repo Magellan</summary>
-		<description>Repo Magellan</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
@@ -507,25 +472,6 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="repository.tv0ne" name=" Tv0ne repository" version="1.1" provider-name="GRecoTM">
-    <extension point="xbmc.addon.repository" name="Tv0ne repository">
-        <info compressed="false">http://grecotm.com/tv0ne/addons.xml</info>
-        <checksum>http://grecotm.com/tv0ne/addons.xml.md5</checksum>
-        <datadir zip="true">http://grecotm.com/tv0ne/zips</datadir>
-        <hashes>false</hashes>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Tv0ne repository</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" version="2.0.0" provider-name="tvaddons">
     <extension point="xbmc.addon.repository" name="TVADDONS.CO Resolvers Repository">
         <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
@@ -581,6 +527,19 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<platform>all</platform>
                 <forum>https://www.tvaddons.co/forums</forum>
                 <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="repository.ytplugin" name="Youtube Addon Repo" version="1.0" provider-name="Jeffrey Frasure">
+	<extension point="xbmc.addon.repository" name="Youtube Addon Repository">
+		<info compressed="false">https://github.com/jdf76/repository/raw/master/addons.xml</info>
+		<checksum>https://github.com/jdf76/repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/jdf76/repository/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Kodis Youtube Addons</summary>
+                <description>Download and install addons from the Kodi Youtube group. This plugin is not official from Google.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
