@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.1x2" name="1x2" version="0.0.3" provider-name="By Teco">
+<addon id="plugin.video.1x2" name="1x2" version="0.0.5" provider-name="By Teco">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.liveresolver"  />
@@ -93,7 +93,7 @@
 
 <addon id="plugin.video.plexus-streams"
        name="Plexus-Streams"
-       version="2.0.69b"
+       version="2.0.70b"
        provider-name="D4FC (Mod by Teco)">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
