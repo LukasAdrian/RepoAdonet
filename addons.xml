@@ -456,7 +456,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <addon id="service.system.acestreammedia"
-       name="Ace Stream Media (Team X)"
+       name="Ace Stream Media (LibreELEC ARM)"
        version="1.0.11"
        provider-name="lysyi">
   <requires>
