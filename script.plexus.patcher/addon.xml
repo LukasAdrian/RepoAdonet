@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.plexus.patcher" name="Plexus Patcher" version="1.0.7" provider-name="Canna_76">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="program.plexus" />
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="es">Modifica Acestream Plexus Rpi2 3 y Amlogic</summary>
+		<description lang="es">Acestream 3.1.48</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum></forum>
+		<disclaimer>Agradecimientos al grupo de Telegram Acestream Spanish y a los usuarios Hanni3al, Bit, Crashillo, Lucas, Alberto y un largo etcetera que han hecho posible este parche.
+		</disclaimer>
+		<source></source>
+		<website></website>
+		<email></email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
