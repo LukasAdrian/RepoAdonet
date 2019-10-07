@@ -486,7 +486,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="service.system.acestreammedia"
        name="Ace Stream Media"
-       version="1.0.12"
+       version="1.2.12"
        provider-name="Acestream Spanish">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
