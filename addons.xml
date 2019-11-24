@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.1x2"
-  version="1.0.15"
+  version="1.0.24"
   name="1x2"
   provider-name="Team NS">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.19.1"/>
+    <import addon="script.module.routing" />
+    <import addon="script.module.TvTap" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -53,45 +55,14 @@
   </extension>
 </addon>
 
-<addon
-	id="plugin.video.arenavisionezy"
-	name="ArenaVision EZY (MOD)"
-	version="5.3.9"
-	provider-name="Wazzu (MOD by Teco)">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="program.plexus" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>ArenaVision EZY</summary>
-		<description>Esto no es un proyecyo paralelo, simplemente es una modificacion para Kodi 16</description>
-		<platform>all</platform>
-		<license/>
-		<forum/>
-		<website/>
-		<email>egrueda@gmail.com</email>
-		<source/>
-	</extension>
-	<extension point="xbmc.addon.repository" name="ArenaVision EZY">
-		<info compressed="false">https://raw.githubusercontent.com/egrueda/kodi-repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/egrueda/kodi-repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/egrueda/kodi-repo/master/zip/</datadir>
-	</extension>
-</addon>
-
-<addon id="plugin.video.f4mTester" version="2.7.9" name="f4mTester" provider-name="Shani">
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.9"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+        <provides>program executable</provides>
     </extension>
-
-
     <extension point="xbmc.addon.metadata">
         <summary>f4mTester</summary>
         <description></description>
@@ -174,6 +145,26 @@
     </extension>
 </addon>
 
+<addon id="repository.balandro" name="Balandro Repo" version="1.0.3" provider-name="Balandro">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+
+    <extension point="xbmc.addon.repository" name="Balandro Repo">
+        <info>https://balandro.tk/repo/addons.xml</info>
+        <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://balandro.tk/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Balandro</summary>
+        <description>Balandro es un navegador para webs con vídeos de películas y series.</description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+        <platform>all</platform>
+    </extension>
+
+</addon>
+
 <addon id="repository.CanalNereo" name="[COLOR lime]Repo Canal Nereo[/COLOR] Repo" version="1.0.2" provider-name="Canal Nereo">
     <extension point="xbmc.addon.repository" name="Mi repositorio">
         <info>https://raw.githubusercontent.com/canalnereo/RepoCanalNereo/master/Repositorio/addons.xml</info>
@@ -186,6 +177,20 @@
         <disclaimer></disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.hirayasoftware" name="Hiraya Software" version="1.0.0" provider-name="Alex303 - Hiraya Software">
+	<extension point="xbmc.addon.repository" name="Hiraya Software">
+		<info>http://hirayasoftware.com/repo/addons.xml</info>
+		<checksum>http://hirayasoftware.com/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://hirayasoftware.com/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Hiraya Software Repository</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.kodil" name=".[COLOR blue].Kodil [/COLOR][COLOR white] Repository [/COLOR]" version="1.3" provider-name="kodil">
@@ -303,20 +308,6 @@
     </extension>
 </addon>
 
-<addon id="repository.RepoAdoNet" name="[COLOR red] Teco[/COLOR] Repo" version="1.0.2" provider-name="Teco">
-    <extension point="xbmc.addon.repository" name="Repo Teco">
-        <info>https://raw.githubusercontent.com/LukasAdrian/RepoAdoNet/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/LukasAdrian/RepoAdoNet/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/LukasAdrian/RepoAdoNet/master/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio </summary>
-        <description>Descarga e instala Add-ons con el repositorio de MR-Teco.</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="repository.ronniehd" name="RonnieHD repository" version="1.0.1" provider-name="RonnieHD">
 	<extension point="xbmc.addon.repository" name="RonnieHD Repository">
 		<info compressed="false">https://raw.githubusercontent.com/ronniehd/repository.ronniehd/master/addons.xml</info>
@@ -416,37 +407,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.kelebek"
-       name="KELEBEK"
-       version="3.0.0"
-       provider-name="Anabel">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.pyxbmct" version="1.1.4" />
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.myconnpy" version="1.1.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
-	<provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>KELEBEK V3</summary>
-    <description>Scan Sources searching changes and addons</description>
-    <language></language>
-    <license></license>
-    <source></source>
-    <forum></forum>
-    <website></website>
-	<assets>
-		<icon>resources/icon.png</icon>
-		<fanart>resources/fanart.jpg</fanart>
-	</assets>
-  </extension>
-</addon>
-
 <addon id="script.limpiarkodi"
        name="Limpia Tu Kodi"
        version="2.0.0"
@@ -467,6 +427,30 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <source></source>
     <forum></forum>
     <website></website>
+  </extension>
+</addon>
+
+<addon id="script.module.TvTap" name="TV Tap" version="1.7" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.livestreamer" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">All credit goes to the Original Dev RACC</summary>
+    <description lang="en_gb">TvTap Module</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 
