@@ -534,10 +534,9 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="addon.py">
-       <provides>program executable</provides>
+       <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Proxy for f4m</summary>
         <description></description>
         <platform>all</platform>
     </extension>
