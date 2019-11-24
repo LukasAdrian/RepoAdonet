@@ -452,7 +452,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.tvtap" name="TV Tap" version="1.7" provider-name="RACC">
+<addon id="script.module.TvTap" name="TV Tap" version="1.7" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
@@ -460,7 +460,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_gb">All credit goes to the Original Dev RACC</summary>
@@ -505,7 +505,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.video.f4mproxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
