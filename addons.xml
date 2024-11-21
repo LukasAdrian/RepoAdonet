@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="repository.RepoAdoNet" name="RepoTeco" version="1.0.0" provider-name="LukasAdrian">
-    <extension point="xbmc.addon.repository" name="RepoTeco">
-        <!-- Directorios para diferentes versiones de Kodi -->
-        <dir>
-            <kodi_version min="20.0.0" max="21.9.9">https://raw.githubusercontent.com/LukasAdrian/RepoTeco/master/zip/</kodi_version>
-        </dir>
-        <info compressed="false">https://raw.githubusercontent.com/LukasAdrian/RepoTeco/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/LukasAdrian/RepoTeco/master/addons.xml.md5</checksum>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para addons de Kodi</summary>
-        <description>Este repositorio contiene addons para Kodi compatibles con las versiones recientes.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="plugin.video.Agora"
        name="[B][LOWERCASE][CAPITALIZE][COLOR white]Agora[/CAPITALIZE][/LOWERCASE][/B][/COLOR]"
        version="0.0.4"
@@ -84,6 +68,23 @@
         <platform>all</platform>
     </extension>
 </addon>
+
+<addon id="repository.RepoAdoNet" name="RepoTeco" version="1.0.0" provider-name="LukasAdrian">
+    <extension point="xbmc.addon.repository" name="RepoTeco">
+        <!-- Directorios para diferentes versiones de Kodi -->
+        <dir>
+            <kodi_version min="20.0.0" max="21.9.9">https://raw.githubusercontent.com/LukasAdrian/RepoTeco/master/zip/</kodi_version>
+        </dir>
+        <info compressed="false">https://raw.githubusercontent.com/LukasAdrian/RepoTeco/refs/heads/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/LukasAdrian/RepoTeco/refs/heads/master/addons.xml.md5</checksum>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para addons de Kodi</summary>
+        <description>Este repositorio contiene addons para Kodi compatibles con las versiones recientes.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 
 <addon id="script.limpiarkodi"
        name="Limpia Tu Kodi"
