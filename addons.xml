@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.Agora"
+       name="[B][LOWERCASE][CAPITALIZE][COLOR white]Agora[/CAPITALIZE][/LOWERCASE][/B][/COLOR]"
+       version="0.0.4"
+       provider-name="Teco">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Addonagora@gmail.com</summary>
+    <description>Addon de Documentales 100% gratuito y basado en Youtube con licencia GNU GPL.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.chomiteca"
+       name="Chomiteca"
+       version="1.6.3"
+       provider-name="fightnight/Mafarricos/Leinad4Mind">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="1.0.0"/>
+		<import addon="script.module.requests" version="2.6.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="chomiteca.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="pt_PT">Conteúdos do site Chomikuj.pl no Kodi</summary>
+        <summary lang="pt_BR">Conteúdos do site Chomikuj.pl no Kodi</summary>
+        <summary lang="en">Contents of Chomikuj.pl website in Kodi</summary>
+		<description lang="pt_pt">Vê os teus conteúdos e, caso tenhas pontos, os da comunidade Chomikuj no Kodi.</description>
+		<description lang="pt_br">Veja os seus conteúdos e, caso tenha pontos, os da comunidade Chomikuj no Kodi.</description>
+		<description lang="en">Check out your content and, in case you've points, the Chomikuj community in Kodi.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>program executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.limpiarkodi"
+       name="Limpia Tu Kodi"
+       version="2.0.0"
+       provider-name="Catoal - Teco">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+     <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Limpiar</summary>
+    <description>La herramienta para limpiar de una pasada su dispositivo.</description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>program executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>F4mProxy</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+</addons>
